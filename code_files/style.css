@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+button {
+  background-color: hsl(0, 0%, 95%);
+}
+
+body {
+  height: 100vh;
+}
+main {
+  width: 60%;
+  height: 100%;
+  margin: auto;
+  /* margin-top: 20px 0px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div {
+  flex: 1;
+  padding: 32px;
+  /* width: 100%; */
+  /* margin: auto; */
+  height: 70%;
+  /* margin-top: 0px; */
+  /* margin: auto; */
+}
+
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 5px 0px 0px 5px;
+}
+
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0px 5px 5px 0px;
+}
+
+/* svg {
+  margin-bottom: 10px;
+} */
+h1 {
+  font-family: "Big Shoulders Display";
+  color: hsl(0, 0%, 95%);
+  padding: 15px 0px;
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  /* padding: 20px 0px; */
+  line-height: 1.5;
+  margin: 20px 0px;
+  height: 45%;
+  font-size: 15px;
+  font-family: "Lexend Deca";
+}
+
+button {
+  font-weight: bold;
+  border-color: hsl(0, 0%, 95%);
+  border: 2px solid;
+  border-radius: 50px;
+  padding: 12px 30px;
+  /* margin-top: 0px;
+  margin-bottom: 0px; */
+  font-size: 15px;
+  font-family: "Lexend Deca";
+  cursor: pointer;
+}
+
+#sedans {
+  color: hsl(31, 77%, 52%);
+}
+
+#sedans:hover {
+  background-color: hsl(31, 77%, 52%);
+  color: hsl(0, 0%, 95%);
+  border-color: hsl(0, 0%, 95%);
+}
+
+#suvs {
+  color: hsl(184, 100%, 22%);
+}
+
+#suvs:hover {
+  background-color: hsl(184, 100%, 22%);
+  color: hsl(0, 0%, 95%);
+  border-color: hsl(0, 0%, 95%);
+}
+
+#luxury {
+  color: hsl(179, 100%, 13%);
+}
+
+#luxury:hover {
+  background-color: hsl(179, 100%, 13%);
+  color: hsl(0, 0%, 95%);
+  border-color: hsl(0, 0%, 95%);
+}
+
+@media (max-width: 1024px) {
+  main {
+    width: 80%;
+  }
+
+  div {
+    height: 80%;
+    padding: 32px;
+  }
+
+  p {
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 886px) {
+  div {
+    height: 70%;
+    padding: 20px;
+  }
+
+  p {
+    font-size: 15px;
+    /* margin-bottom: 40px; */
+  }
+
+  button {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  main {
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+  }
+
+  div {
+    height: 100%;
+    /* font-size: x-small; */
+  }
+
+  button {
+    padding: 12px 30px;
+    margin-top: 30px;
+    /* font-size: x-small; */
+  }
+
+  .sedans {
+    border-radius: 8px 8px 0px 0px;
+  }
+
+  .luxury {
+    border-radius: 0px 0px 8px 8px;
+  }
+}
