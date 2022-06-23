@@ -12,6 +12,23 @@ button {
 body {
   height: 100vh;
 }
+header {
+  margin-top: 50px;
+  /* width: 80%; */
+}
+
+a {
+  margin: auto;
+  font-size: 15px;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 700;
+  border: solid 3px;
+  background-color: white;
+  border-radius: 50px;
+  /* margin: 2px; */
+  /* margin-bottom: 150px; */
+}
 main {
   width: 60%;
   height: 100%;
@@ -146,6 +163,9 @@ button {
     height: auto;
   }
 
+  header {
+    margin: 20px;
+  }
   div {
     height: 100%;
     /* font-size: x-small; */

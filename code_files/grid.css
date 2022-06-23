@@ -10,10 +10,29 @@ body {
   /* place-items: center; */
   padding: 10px;
   min-height: 100vh;
+  flex-direction: column;
+}
+
+header {
+  margin-top: 50px;
+  /* width: 80%; */
+}
+
+a {
+  margin: auto;
+  font-size: 15px;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 700;
+  border: solid 3px;
+  background-color: white;
+  border-radius: 50px;
+  /* margin: 2px; */
+  /* margin-bottom: 150px; */
 }
 
 main {
-  width: 95%;
+  width: 90%;
   /* height: 80%; */
   display: grid;
   grid-template-areas:
@@ -23,7 +42,7 @@ main {
     "green_box green_box green_box blue_box_2 blue_box_2 blue_box_2";
   margin: auto;
   gap: 10px;
-  grid-auto-rows: 140px;
+  grid-auto-rows: 100px;
 }
 
 .item_1 {
@@ -67,5 +86,9 @@ main {
     height: 80%;
     grid-auto-rows: 100px;
     gap: 5px;
+  }
+
+  header {
+    margin: 20px;
   }
 }
